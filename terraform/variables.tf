@@ -1,3 +1,17 @@
-variable "region" { type = string, default = "us-east-1" }
-variable "project" { type = string, default = "macie-pii-guardrail" }
-variable "email"   { type = string } # SNS subscription email
+variable "region" {
+  type        = string
+  default     = "us-east-1"
+  description = "AWS region for all resources"
+}
+
+variable "project" {
+  type        = string
+  default     = "macie-pii-guardrail"
+  description = "Project name used for resource naming"
+}
+
+variable "email" {
+  type        = string
+  description = "atul_kamble@hotmail.com"
+}
+
