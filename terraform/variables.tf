@@ -12,6 +12,5 @@ variable "project" {
 
 variable "email" {
   type        = string
-  description = "atul_kamble@hotmail.com"
+  description = "Email address to subscribe to SNS alerts"
 }
-
