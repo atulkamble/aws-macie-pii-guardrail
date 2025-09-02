@@ -27,4 +27,3 @@ output "macie_job_name" {
   value       = aws_macie2_classification_job.job.name
   description = "Macie classification job name"
 }
-
