@@ -1,5 +1,13 @@
 hands-on **AWS Macie: PII Guardrail Project** you can drop into a repo and demo in an hour—includes **Terraform IaC**, **AWS CLI**, and a **Python Lambda** that quarantines risky objects and alerts via **SNS**.
 
+```
+terraform fmt
+terraform init
+terraform validate
+terraform plan -var="email=atul_kamble@hotmail.com"
+terraform apply -auto-approve -var="atul_kamble@hotmail.com"
+```
+
 ---
 
 # 🚨 Project: Macie PII Guardrail for S3
