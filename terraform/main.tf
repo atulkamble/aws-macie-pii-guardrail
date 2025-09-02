@@ -41,12 +41,10 @@ resource "aws_macie2_account" "this" {}
 
 # Export Macie findings (full findings JSON) to S3
 resource "aws_macie2_classification_export_configuration" "export" {
-  configuration {
-    s3_destination {
-      bucket_name = aws_s3_bucket.findings.bucket
-      key_prefix  = "macie-findings"
-      kms_key_arn = null
-    }
+  s3_destination {
+    bucket_name = aws_s3_bucket.findings.bucket
+    key_prefix  = "macie-findings"
+    kms_key_arn = null
   }
 }
 
@@ -60,7 +58,7 @@ resource "aws_macie2_classification_job" "job" {
   name     = "${var.project}-job"
 
   schedule_frequency {
-    daily_schedule {}
+    daily_schedule = true
   }
 
   sampling_percentage = 100
