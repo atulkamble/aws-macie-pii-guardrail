@@ -1,4 +1,4 @@
-Awesome, Atul! Here’s a complete, hands-on **AWS Macie: PII Guardrail Project** you can drop into a repo and demo in an hour—includes **Terraform IaC**, **AWS CLI**, and a **Python Lambda** that quarantines risky objects and alerts via **SNS**.
+hands-on **AWS Macie: PII Guardrail Project** you can drop into a repo and demo in an hour—includes **Terraform IaC**, **AWS CLI**, and a **Python Lambda** that quarantines risky objects and alerts via **SNS**.
 
 ---
 
